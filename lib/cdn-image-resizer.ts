@@ -29,6 +29,12 @@ export default class CDNImageResizer extends Construct {
   constructor(scope: Construct, id: string, props: CDNImageResizerProps) {
     super(scope, id);
 
+    const sharpLayer = new lambda.LayerVersion(this, 'SharpLayer', {
+      code: lambda.Code.fromAsset(
+        path.join(__dirname, '..', 'lambda-layers', 'sharp', 'layer.zip')
+      ),
+    });
+
     this.resizerFunction = new lambda.Function(this, 'ResizerFunction', {
       runtime: lambda.Runtime.NODEJS_12_X,
       handler: 'index.handler',
@@ -39,6 +45,7 @@ export default class CDNImageResizer extends Construct {
         }
       ),
       memorySize: props.functionMemory || 256,
+      layers: [sharpLayer],
       environment: {
         ALLOW_ORIGINS: (
           props.defaultCorsPreflightOptions?.allowOrigins || []
