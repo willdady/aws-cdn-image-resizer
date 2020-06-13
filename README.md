@@ -1,0 +1,1 @@
+# AWS CDN Image Resizer
