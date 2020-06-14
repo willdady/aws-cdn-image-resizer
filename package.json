@@ -1,6 +1,6 @@
 {
   "name": "aws-cdn-image-resizer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "TypeScript AWS CDK construct which creates an basic image resizing CDN using CloudFront, S3, API Gateway and Lambda.",
   "main": "./lib/cdn-image-resizer.js",
   "types": "./lib/cdn-image-resizer.d.ts",
