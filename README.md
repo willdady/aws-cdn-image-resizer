@@ -1,6 +1,6 @@
 # AWS CDN Image Resizer
 
-TypeScript AWS CDK contruct which creates an image resizing CDN using CloudFront, S3, API Gateway.
+TypeScript AWS CDK contruct which creates an _basic_ image resizing CDN using CloudFront, S3, API Gateway and Lambda.
 
 ## Construct Props
 
