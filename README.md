@@ -1,6 +1,6 @@
 # AWS CDN Image Resizer
 
-TypeScript AWS CDK contruct which creates an basic image resizing CDN using CloudFront, S3, API Gateway and Lambda.
+TypeScript AWS CDK construct which creates an basic image resizing CDN using CloudFront, S3, API Gateway and Lambda.
 
 Once deployed images in the deployed S3 bucket are accessible via the deployed CloudFront endpoint e.g.
 
@@ -16,10 +16,9 @@ https://d3i3pfoeixxxxx.cloudfront.net/200x200/foo.png
 
 Dimensions can be specified as `<width>x<height>`, `<width>` or `x<height>` (note the preceding x when specifying height only). Images are resized using [sharp][8] which is deployed as a lambda layer.
 
-
 ### Note
 
-* AWS publishes and maintains [Serverless Image Handler][7], which *may* be a better choice depending on your use case (does not use AWS CDK).
+- AWS publishes and maintains [Serverless Image Handler][7], which _may_ be a better choice depending on your use case (does not use AWS CDK).
 
 ## Construct Props
 
