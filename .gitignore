@@ -1,5 +1,3 @@
-*.js
-!lambda/image-processor/*.js
 !jest.config.js
 *.d.ts
 node_modules

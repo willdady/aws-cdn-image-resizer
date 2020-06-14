@@ -2,7 +2,7 @@
   "name": "aws-cdn-image-resizer",
   "version": "0.1.0",
   "description": "",
-  "main": "lib/cdn-image-resizer.ts",
+  "main": "lib/cdn-image-resizer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
